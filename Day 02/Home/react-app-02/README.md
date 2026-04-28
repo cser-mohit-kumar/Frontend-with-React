@@ -1,0 +1,59 @@
+Question1:Class Based (stateful) vs function based component (stateless)
+Answer2:
+
+
+| Feature                  | Function Component                            | Class Component                               |
+| ------------------------ | --------------------------------------------- | --------------------------------------------- |
+| **Definition**           | Plain JavaScript function                     | ES6 class extending `React.Component`         |
+| **State**                | ✅ Yes (using Hooks like `useState`)           | ✅ Yes (`this.state`)                          |
+| **Lifecycle methods**    | ✅ Yes (using `useEffect`)                     | ✅ Yes (`componentDidMount`, etc.)             |
+| **`this` keyword**       | ❌ Not used (`undefined`)                      | ✅ Used (`this` refers to instance)            |
+| **Syntax complexity**    | ✅ Simple, less boilerplate                    | ❌ Verbose (constructor, binding)              |
+| **Code readability**     | ✅ Easier to read                              | ❌ Harder for beginners                        |
+| **Performance**          | ⚡ Optimized (with hooks, concurrent features) | ⚡ Similar, but less modern optimization focus |
+| **Reusability of logic** | ✅ Easy (custom hooks)                         | ❌ Hard (HOCs, render props)                   |
+| **Event handling**       | Simple functions                              | Requires binding (`this`) sometimes           |
+| **Learning curve**       | ✅ Easier                                      | ❌ Slightly harder                             |
+| **Current usage**        | 🚀 Preferred (industry standard)              | ⚠️ Legacy (still supported)                   |
+| **Boilerplate code**     | Minimal                                       | More                                          |
+| **Future support**       | ✅ Actively developed                          | ⚠️ No new features                            |
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Question2: whats the use of use state and the rules?
+answer2:
+
+if we use a function to call a functio or define a function in useState then it only gets called once which helps with cpmplex functions, but if its a simple hardcore value then we give directly
+
+## 🔹 `useState`
+
+* Stores data in a component
+* Updates data using `setState`
+* Change → React re-renders UI
+
+---
+
+## 🔹 Syntax
+
+```js
+const [state, setState] = useState(initialValue)
+```
+
+---
+
+## 🔹 Why use it
+
+* Handle user input
+* Update UI dynamically
+
+---
+
+## 🔹 Rules
+
+* Use at top level only
+* Use inside React components only
+* Don’t modify state directly
+* Use `setState` to update
+* Updates are async
+
+---
