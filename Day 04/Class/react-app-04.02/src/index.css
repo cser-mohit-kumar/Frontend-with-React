@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #37da42, #3eb9b5);
+  background: linear-gradient(135deg, #667eea, #764ba2);
   min-height: 100vh;
   color: #333;
 }
@@ -19,7 +19,7 @@ body {
   padding: 25px;
   font-size: 30px;
   font-weight: 600;
-  color: black;
+  color: white;
   letter-spacing: 1px;
   text-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
